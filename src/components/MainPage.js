@@ -7,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 import Cookies from 'js-cookie';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import '../App.css';
 
 export default function MainPage() {
@@ -45,7 +47,7 @@ export default function MainPage() {
               fontSize: '3.5vh',
               fontFamily: 'Monospace',
               marginLeft: '20px',
-              marginRight: '20px'
+              marginRight: '20px',
             }}
           >
             FIND-JOBS
@@ -84,7 +86,7 @@ export default function MainPage() {
             <Nav className="ms-auto">
               <NavDropdown
                 align="end"
-                title={<img src="homeImage.png" alt="Logo" style={{ width: '30px', cursor: 'pointer', marginLeft: '20px' }} />}
+                title={<img src="jspImage.png" alt="Logo" style={{ width: '30px', cursor: 'pointer', marginLeft: '20px' }} />}
                 id="nav-dropdown"
               >
                 <NavDropdown.Item href="">JSP</NavDropdown.Item>
@@ -108,6 +110,155 @@ export default function MainPage() {
           </Container>
         </Container>
       )}
+
+        <Container className="mt-5">
+        <Row className="my-3">
+            <Col>
+            <div
+                style={{
+                height: '100px',
+                backgroundColor: '#f8f9fa',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                border: '1px solid #ddd',
+                }}
+            >
+                Row 1
+            </div>
+            </Col>
+        </Row>
+
+        <Row className="my-3">
+            <Col>
+            <div
+                style={{
+                height: '100px',
+                backgroundColor: '#e9ecef',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                border: '1px solid #ddd',
+                }}
+            >
+                Row 2
+            </div>
+            </Col>
+        </Row>
+
+        <Row className="my-3">
+            <Col>
+            <div
+                style={{
+                height: '100px',
+                backgroundColor: '#dee2e6',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                border: '1px solid #ddd',
+                }}
+            >
+                Row 3
+            </div>
+            </Col>
+        </Row>
+        </Container>
+
+      <Container className="mt-5">
+        <Row className="g-3" 
+            style={{
+                    backgroundColor: '#dee2e6',
+                    padding: '20px',
+                    borderRadius: '10px'
+                }}
+            >
+          
+          <Col xs={12} sm={6} md={3} className="d-flex justify-content-center">
+            <div
+              className="text-center"
+              style={{
+                width: '150px',
+                height: '150px',
+                backgroundColor: '#ffffff',
+                border: '1px solid #dddddd',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: '10px',
+              }}
+            >
+              <Button variant="success" size="md" className="mb-2">
+                Special Offers
+              </Button>
+              <p>Subscribe</p>
+            </div>
+          </Col>
+
+          <Col xs={12} sm={6} md={3} className="d-flex justify-content-center">
+            <div
+              className="text-center"
+              style={{
+                width: '150px',
+                height: '150px',
+                backgroundColor: '#ffffff',
+                border: '1px solid #dddddd',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: '10px',
+              }}
+            >
+              <Button variant="primary" size="md" className="mb-2">
+                Freelancer
+              </Button>
+            </div>
+          </Col>
+
+          <Col xs={12} sm={6} md={3} className="d-flex justify-content-center">
+            <div
+              className="text-center"
+              style={{
+                width: '150px',
+                height: '150px',
+                backgroundColor: '#ffffff',
+                border: '1px solid #dddddd',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: '10px',
+              }}
+            >
+              <Button variant="info" size="md" className="mb-2">
+                News
+              </Button>
+            </div>
+          </Col>
+
+          <Col xs={12} sm={6} md={3} className="d-flex justify-content-center">
+            <div
+              className="text-center"
+              style={{
+                width: '150px',
+                height: '150px',
+                backgroundColor: '#ffffff',
+                border: '1px solid #dddddd',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                borderRadius: '10px',
+              }}
+            >
+              <Button variant="warning" size="md" className="mb-2">
+                Profile Rating
+              </Button>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
